@@ -14,8 +14,8 @@ const val apikey="16af1dcc557540739be0a2d13fc1e142"
 
 
 interface NewsInterface{
-    @GET("v2/top-headlines?apiKey=$apikey")
-    fun getHeadlines(@Query("country") country:String, @Query("page") page:Int ,@Query("category") category:String): Call<News>
+    @GET("v2/everything?apiKey=$apikey")
+    fun getHeadlines(@Query("q") q:String,@Query("pageno") pageno:Int, @Query("from") from:String ,@Query("sortBy") sortBy:String): Call<News>
     //https://newsapi.org/v2/top-headlines?apiKey=0a76255895cd421a93a19482f9ef1816&country=in&category=sports
 }
 object Newsservice{
