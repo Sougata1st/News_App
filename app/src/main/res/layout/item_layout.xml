@@ -26,6 +26,7 @@
 
     <TextView
         android:id="@+id/titleview"
+        android:textColor="@color/LinkBlue"
         android:layout_width="match_parent"
         android:layout_marginTop="8dp"
         style="@style/TextAppearance.AppCompat.Headline"
