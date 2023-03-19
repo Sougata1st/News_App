@@ -11,6 +11,7 @@ class webview : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_webview)
+        getSupportActionBar()?.hide()
         val url=intent.getStringExtra("URL")
         if (url!=null){
             webView.settings.javaScriptEnabled=true
